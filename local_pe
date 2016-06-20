@@ -2,6 +2,8 @@
 
 echo es_PE.UTF-8 UTF-8 >> /etc/locale.gen
 echo es_PE ISO-8859-1 >> /etc/locale.gen
+export LANG=es_PE.UTF-8
+export LC_MESSAGES="C"
 locale-gen
 locale > /etc/locale.conf
 cat /etc/locale.conf
